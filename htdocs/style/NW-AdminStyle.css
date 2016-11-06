@@ -1,0 +1,916 @@
+/*
+  ========================================
+  CSS Reset
+  ========================================
+*/
+
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/*
+  ========================================
+  Custom styles
+  ========================================
+*/
+
+body {
+  background: #29a3a3;
+  color: #6b2e2e;
+  font: 300 16px/22px "Lato", "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+#wait {
+    display:none;
+    width:69px;
+    height:89px;
+    border:1px solid black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    padding:2px;
+}
+
+
+/*
+  ========================================
+  Grid
+  ========================================
+*/
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
+}
+.container,
+.grid {
+  margin: 0 auto;
+  width: 960px;
+}
+/*.container {
+  padding-left: 30px;
+  padding-right: 30px;
+}*/
+.grid,
+.col-1-3,
+.col-2-3,
+.col-1-5 {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.col-1-3,
+.col-2-3,
+.col-1-5  {
+  display: inline-block;
+  vertical-align: top;
+}
+.col-1-3 {
+    width: 33%;
+}
+.col-2-3 {
+    width: 67%;
+}
+.col-1-5 {
+    width: 20%;
+}
+
+/*
+  ========================================
+  Clearfix
+  ========================================
+*/
+
+.group:before,
+.group:after {
+  content: "";
+  display: table;
+}
+.group:after {
+  clear: both;
+}
+.group {
+  clear: both;
+  *zoom: 1;
+}
+/*
+  ========================================
+  Typography
+  ========================================
+*/
+
+small {
+    font-size: 50%;
+}
+sup {
+    vertical-align:  text-top;
+}
+b {
+    font-weight: 600;
+}
+i {
+    font-style: italic;
+}
+/*
+  ========================================
+  Primary header
+  ========================================
+*/
+
+header img {
+        width: inherit;
+        padding-top: 5px;
+        border-radius: 5px;
+
+}
+.jackpot {
+    height: 0px;
+    position: relative;
+    top: -405px;
+    left: 100px;
+}
+.jackpot a {
+    display: inline-block;
+    width: 33.33%;
+}
+.jackpot a img:hover {
+	box-shadow:2px 2px  6px black;
+    border: 3px solid red;
+}
+.jackpot a img {
+    border: 1px solid #29a3a3;
+    margin-top: 50px;
+}
+
+/*
+  ========================================
+  Primary footer
+  ========================================
+*/
+iframe {
+  position: relative;
+  top: 30px;
+
+  -moz-border-radius: 12px;
+  -webkit-border-radius: 12px;
+  border-radius: 12px;
+
+  -moz-box-shadow: 4px 4px 14px #000;
+  -webkit-box-shadow: 4px 4px 14px #000;
+  box-shadow: 4px 4px 14px #000;
+
+  height: 650px ;
+} 
+
+/*
+  ========================================
+  Navigation Menu
+  ========================================
+*/
+
+.menu  {
+    background-color:#FFD700;
+    font-family:"Trebuchet MS", Helvetica, sans-serif;
+    font-size: 30px;
+    width: inherit;
+    height: 30px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 3px 0;
+}
+.menuitem {
+}
+a.menuItem:link  {
+          color:#00f;
+          text-shadow:2px 2px 8px darkorange;
+          text-decoration:none;
+          
+}
+		
+a.menuItem:visited  {
+          color:#00f;
+          text-shadow:2px 2px 8px blue; }
+
+a.menuItem:hover  {
+  		font-size:105%;
+		text-shadow:2px 2px  6px black; }
+
+/*
+  ========================================
+  Winnings
+  ========================================
+*/
+
+.Earnings  {
+    width: 100%;
+    border-radius: 5px;
+    margin: 0 auto;
+	background-color:Khaki;
+	font-family: Impact, Charcoal, sans-serif;
+	font-size: 40px;
+	text-align: center;
+	color:red;
+}
+
+.Earnings p {
+    display: inline-block;
+	margin:2% 1%;
+	font-size:60%;
+    bottom: 10px;
+    position: relative;
+}
+.Earnings h1{
+    padding: 2% 1%;
+}
+#current {
+    font-size: 150%;
+    color: blue;
+    position: relative;
+    top: 7px;
+    padding-bottom: 5%;
+}
+#win_bkg {
+    width: 150px;
+    height: 75px;
+    border-radius: 50%;
+    background-color:rgba(0, 128,0,.3);
+    position: relative;
+    top: -82px;
+    left: 85px;
+    float: left;
+}
+/*
+  ========================================
+  Sign Ups
+  ========================================
+*/
+.signUp {
+	font-family:"Open Sans";
+	font-weight:700;
+    font-size:  1.5em;
+    color: black;
+    padding: 10px 20px;
+    margin: 0 auto;
+    line-height: 1.5em;
+    text-indent: -15px;
+}
+.note::first-letter {
+    font-size: 1.5em;
+    vertical-align: central;
+	text-shadow:2px 2px  6px black;
+
+}
+h1.note {
+    font-size: 150%;
+    text-align: center;
+    margin-top: 5%;
+}
+.lastLine {
+    text-align: center;
+    color: green;
+	text-shadow:2px 2px  6px yellow;
+}
+.lastLine span {
+    font-size:  150%;
+}
+.signUp table {
+    font-size:1.1em;
+    table-layout: fixed;
+    width: 85%;
+    margin:  6% auto;
+    position: relative;
+    top: -30px;
+}
+.signUp td:nth-child(odd) {
+    width: 30%;
+}
+.signUp td:nth-child(even) {
+    width: 70%;
+}
+.signUp input {
+    font-size: .85em;
+    font-weight: bold;
+    color: #15178b;
+}
+
+.formFieldLabel {
+    font-size: 1.2em;
+    font-weight: bold;
+    text-align: right;
+}
+.formField {
+    vertical-align: middle;
+    padding-left: 15px;
+    text-align: center;
+}
+.formFieldDesc {
+    padding-left: 35px;
+    color: rgba(0, 0, 0, 0.85);
+}
+.signUp button {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: red;
+    background-color:  azure;
+    padding:  2px 5px 2px 5px;
+    border-radius: 10px;
+    margin: 0px 40%;
+}
+.signUp button:hover {
+    box-shadow: 2px 2px 6px black;
+    background-color: yellow;
+}
+.playerInfo {
+    border: 10px groove gray;
+    padding: 20px;
+}
+/*
+  ========================================
+  Lottery Pool Rules
+  ========================================
+*/
+#rules,.sectionTitle,#rulesRevised {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+}
+#rules{
+    list-style:square;
+    color:#15178b;
+    line-height: 1.5em;
+    text-align: left;
+    padding: 10px 30px 0 40px;
+
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+
+    height: 625px ;
+    overflow: auto;
+}
+#rules li {
+    margin-top: 10px;
+}
+.sectionTitle {
+    font-size: 250%;
+    line-height: 100%;
+    color: yellow;
+    text-shadow: 2px 2px 4px red;
+    text-align: center;
+    margin: 20px auto;
+}
+#rulesRevised {
+    color: black;
+}
+/*
+  ========================================
+  Lottery Tickets
+  ========================================
+*/
+.sectionTitle span {
+    display: inline-block;
+    font-size: 110%;
+    color: blue;
+    text-decoration: underline;
+    text-shadow: 2px 2px 4px darkblue;
+    margin: 10px auto 30px;
+
+}
+.tickets {
+    background: center/contain no-repeat content-box url("../images/NW - Current Tickets.png");
+
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+
+    height: 625px ;
+    overflow: auto;
+}
+/*
+  ========================================
+  Players
+  ========================================
+*/
+.playBox {
+    width: 50%;
+    float: left;
+}
+.playerList {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+
+    height: 625px ;
+    overflow: auto;
+}
+.players  {
+          font-family:'Trebuchet MS', Helvetica, sans-serif;
+          font-size:50px;
+          font-weight:bold;
+          line-height: 1em;
+          text-align:center;
+          color:blue;
+          list-style:none;
+          
+}
+
+.players:hover  {
+          font-size:60px;
+          text-shadow:2px 2px  6px black;
+          
+}
+/*
+  ========================================
+  Results
+  ========================================
+*/
+
+.winning_number_sm li  {
+          width:29px;
+          line-height:30px;
+          background:url("../images/white-ball-sm.png") no-repeat center;
+          padding:2px 2px 2px 2px;
+          margin:0 5px 0px 0;
+          text-align:center;
+          margin-right:0;
+          font-weight:bold;
+          color:#de6a1b;
+          font-family:Arial, Geneva, sans-serif;
+          font-size:16px;
+          float: left;
+          
+}
+
+.winning_number_sm li.mega  {
+          color:#09c;
+          font-weight:bold;
+          
+}
+
+.winning_number_sm li.noMega  {
+		visibility:hidden;
+        
+}
+		
+hr.thick  {
+          border-color:blue;
+          border-style:ridge;
+          border-width:10px;
+          /*margin-right:350px;*/
+}
+.tableArea {
+    width: 47%;
+    margin: 0 1.5%;
+    float: left;
+}		 
+.draw_games {
+	color:DarkBlue;
+        
+}
+		   		
+.results {
+		  color:blue;
+		  font-family:Verdana,sans-serif;
+		  font-size:15px; 
+}
+section.results {
+    -moz-border-radius: 12px;
+    -webkit-border-radius: 12px;
+    border-radius: 12px;
+
+    -moz-box-shadow: 4px 4px 14px #000;
+    -webkit-box-shadow: 4px 4px 14px #000;
+    box-shadow: 4px 4px 14px #000;
+
+    height: 400px ;
+    overflow: auto;
+
+}
+ div  h2 {
+    text-align:left;
+    margin-left:10%;
+          
+}
+		  
+table.results  {
+    table-layout:fixed;
+    text-align:center;
+    font-size:110%;
+    font-weight:600;
+    width: 100%;
+}
+		 
+.results th  {
+	text-decoration:underline;    
+}
+
+caption.results  {
+          font-weight:bold;
+          text-align:left;
+          /*text-decoration:underline;*/
+		color:aliceblue;
+          padding: 20px 0 10px 0; 
+          
+}
+	
+.game_win_amt {
+          padding:20px 0px 20px 100px;
+          font-weight:600;
+          font-size:125%;
+          
+}
+		
+.picks  {
+          font-family:"Courier New", Courier, monospace;
+          font-weight:600;
+}
+		
+.match, .match_amt  {
+          padding:0px 10px 10px 20px;
+          font-weight:400;
+          
+}
+		
+span.match_pick  {
+          color:red; 
+          
+}
+
+span.mega_pick  {
+          /*color:powderblue;*/
+          text-decoration:underline;
+          margin-left:6px; 
+          
+}
+
+#resultsSummary {
+    width: 100%;
+    text-align: center;
+    color: blue;
+}
+#resultsSummary hr {
+    border:10px solid blue;
+}
+#resultsSummary h1 {
+    font-size: 250%;
+    font-weight: bold;
+    margin-top: 20px;
+    color: yellow;
+    text-shadow: 2px 2px 4px red;
+}
+/*
+  ========================================
+  Lottery Checker
+  ========================================
+*/
+#gamesToCheck  {
+	border:5px groove black;
+	width:30%;
+    margin: 20px auto;
+	padding:5px;
+    
+}
+#paramArea, #dataArea {
+   display:none; 
+}
+.checker {
+	font-family:"Open Sans";
+	font-weight:700;
+    font-size:  1.5em;
+    color: black;
+    padding: 10px 20px;
+    line-height: 1.5em;
+    text-align: left;
+}
+.checker input {
+    font-size: .85em;
+    font-weight: bold;
+    color: #15178b;
+}
+.checker button {
+    display: inline-block;
+    font-size: 1.5em;
+    font-weight: 700;
+    color: red;
+    background-color:  azure;
+    padding:  2px 5px 2px 5px;
+    border-radius: 10px;
+    margin: 10px 25%;
+}
+.checker button:hover {
+    box-shadow: 2px 2px 6px black;
+    background-color: yellow;
+}
+ /*
+  ========================================
+  Lotto Number Entry
+  ========================================
+*/
+.entry {
+    font-size: 10px;
+    border: 5px groove white;
+    background-color:#FFF;
+}
+.entry table {
+    border:1px solid black;
+    margin:  5px auto;
+}
+.entry th {
+    border:1px solid black;
+    margin:  5px auto;
+    background-color:black;
+    color:white;
+}
+.entry tr {
+    border: 0px;
+}
+#gameType{
+    color:blue;
+    font-size:1.15em;
+    font-weight:bold;
+    margin-left:25px;
+}
+#slipButtons {
+    width: 10px;
+    background-color: #a391ef
+}
+#saveBtn {
+    width:100%;
+    height:50px;
+    border-radius: 5px;
+    font-weight:bold;
+    font-size:100%;
+    letter-spacing: -4px;
+    padding-left: 5px;
+    margin-top: 50px; 
+    background-color:yellow; 
+}
+#playTicket {
+    /*padding-left:25px;
+    font-size: 115%;
+    margin-left:25px;*/
+    background-color: #93dcec
+}
+#playTicket th {
+	letter-spacing:10px;
+	font-size:115%;
+}
+#playTicket tr:nth-of-type(even) {
+    background-color: #b1e0ff;
+}
+
+#playTicket .inActive {
+    color: gray;
+    font-style:italic;
+}
+#playTicket .current {
+    color: blue;
+}
+#playTicket .active {
+    color:  red;
+}
+#playTicket .bonus {
+    font-weight:bold;
+}
+
+#saveStatus {
+	margin:100px;
+}
+.dateTable{
+	width:325px;
+    background-color: lightgray;
+}
+.dateTable th {
+	font-weight:bold;
+	font-size:105%;
+	letter-spacing:5px;
+}
+.dateTable select{
+	font-size:75%;
+}
+#hotSpots th {
+	letter-spacing:10px;
+	font-size:115%;
+}
+#hotSpots tr:nth-of-type(even) {
+    background-color: lightgray;
+}
+
+#bonusSpot {
+    background-color: #f5baba;
+}
+#bonusSpot tr:nth-of-type(even) {
+    background-color: #f9d6d6;
+}
+#bonusSpot th {
+	letter-spacing:10px;
+	font-size:115%;
+}
+.notPicked {
+    color:black;
+    font-style:normal;
+    width:50px;
+}
+#hotSpots td, #bonusSpot td, .entry td {
+    padding:5px;
+    margin:5px;
+    text-align: center;
+    font-size:165%;
+}
+.picked {
+    color:red;
+    font-weight:bold;
+}
+ /*
+  ========================================
+  Status
+  ========================================
+*/
+.stats {
+    height: 1100px;
+}
+.poolStatus {
+    font-size: 1.5em;
+    line-height: 2em;
+    margin: 20px auto;
+}
+.poolStatus form input{
+    font-size: inherit;
+    background-color: inherit;
+    border: 0;
+}
+.poolStatus form input:focus{
+    background-color: white;
+}
+.bankFields, .bankLabels {
+    font-size: 1.2em;
+    padding: 40px 2px 0;
+    color: blue;
+    font-weight: bold;
+}
+.bankLabels {
+    text-align: right;
+}
+.bankFields input {
+    font-style: italic;
+}
+
+.bank section {
+    float: left;
+}
+.playerTable {
+    font-size: .5em;
+    color: black;
+    line-height: .85em;
+    border:  5px solid blue;
+    margin: 50px auto;
+    padding-top:  50px;
+}
+.playerTable thead {
+    border: 2px solid gray;
+}
+table.playerTable tbody tr:nth-child(even) {
+    background-color: #84d5d5;
+}
+.playerTable  th {
+    vertical-align: bottom;
+    text-align: left;
+    font-weight: bold;
+    color: yellow;
+}
+.playerTable label {
+    display:inline-block; 
+    font-size: 1.5em;
+    padding-bottom: 10px;
+}
+th.rotate {
+    /* Something you can count on */
+    height: 12px;
+    width: 70px;
+    white-space: nowrap;
+}
+
+th.rotate{
+    transform-origin:   5%  50%;
+    transform: rotate(315deg);
+    padding: 0 10px;
+}
+tr.spacer {
+    height: 50px;
+}
+td.spacer {
+    width: 10px;
+}
+.clearButtons {
+    height: 85px;
+    border: 2px solid blue;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+.clearButtons legend{
+    font-size: .75em;
+    font-weight: bold;
+    color: navy;
+}
+.clearButtons button {
+    position: relative;
+    bottom: 17px;
+}
+.poolActions {
+    height: 85px;
+    border: 2px solid blue;
+    padding: 0 10px;
+    margin: 0 auto;
+    color: blue;
+    font-weight: bold;
+}
+.poolActions legend{
+    font-size: .75em;
+    font-weight: bold;
+    color: navy;
+}
+/*.poolActions div {
+    font-size: .75em;
+}*/
+.poolActions button {
+    position: relative;
+    bottom: 20px;
+}
+#on_offswitch, .on, .off {
+    font-size: .5em;
+    line-height: .5em;
+    padding: 0 2px;
+}
+#on_offswitch {
+    width: 150px;
+    position: relative;
+    bottom: 10px;
+}
+#on_offswitch input.on {
+    border: 1px solid black;
+    background-color: yellow;
+    font-weight: bold;
+}
+#on_offswitch input.off {
+    border: 1px solid black;
+    background-color: inherit;
+    font-weight: bold;
+}

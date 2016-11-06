@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<messages>
+<!--SignUP Intro paragraph-->
+    <note usage="signUps">
+        <p class="note">
+            The current lottery pool is about to end. If you want to keep on playing you can sign up on the line by selecting your name below or filling in the sign up form at work. Please have your money in by 
+            <span class="standOut">Saturday, June 11</span>.
+            The cost is still $20 and can be given to Dan, Ed, or Ben.
+        </p>
+        <p class="lastLine">
+            <span>HAPPY SUMMER!</span> --Dan
+        </p>
+    </note>
+<!--Change Name Intro paragraph-->
+    <note id="changeName">
+        <p class="note">
+            Use this form to sign up for the lottery mail list or if you would like to change the way your name is displayed on the website.<br /> <i>(note: this is for current players only.)</i>
+        </p>
+    </note>
+
+    <note id="rules">
+        <li>The entry fee is $20 per player.</li>
+        <li>We will play 5 quick picks for each of the lottery drawings (Super Lotto Plus, Mega Millions, and Power Ball)</li>
+        <li>We will use the advance play feature to play the same numbers for up to 20 consecutive drawings depending on the amount of cash available and the rules for the different drawings (i.e.  Power Ball only allows for 10 advance draws).</li>
+        <li>The pool will last approximately 2 to 4 months depending on  the number of players in the pool and the amount of the winnings.</li>
+        <li>We will take the cash value of the jackpot. Major prizes will be shared equally between all players. Minor prizes will be used to purchase more picks.</li>
+        <li>To be included in the pool a player must have their money in, be at least 18 years of age,  and sign agreeing to these rules.</li>
+        <li>A copy of the tickets we are playing and the people playing in this pool will be posted, additional copies will be provided on request.</li>
+        <li>All players are free to play the lottery on their own with no obligation to share with the group.</li>
+        <li>A charge of $20 will be deducted from the pool’s winnings to cover expenses.</li>
+        <li>Money can be turned into Dan Mitchell, Ed Curry, or Ben Esseling.</li>
+        <li id="rulesRevised"><small><b><i>Rules revised 2/28/2014</i> DPM</b></small></li>
+    </note>
+
+    <note id="tickets">
+        <p>We start our second year with these tickets.<br />GOOD LUCK!<br /></p>
+    </note>
+</messages>
